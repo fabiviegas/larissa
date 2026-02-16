@@ -1,0 +1,146 @@
+// out: false
+
+.page__header {
+    position: absolute;
+    width: 100%;
+
+    .wrapper {
+        max-width: 1225px;
+        padding: 38px 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .is--desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 62px;
+
+            .logo { 
+                width: 256px;
+
+                a {
+                    width: 222px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }        
+
+            .links {
+                display: flex;
+                align-items: center;
+                gap: 52px;
+
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    transition: all linear .15s;
+                    color: #FFF;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #E9B970;
+                    }
+                }
+            }
+        }
+
+        .is--mobile {
+            display: none;
+        }
+    }
+
+
+
+    @media screen and (max-width: @tablet) {
+
+        .wrapper {
+            padding: 24px 28px;
+
+            .logo {
+                width: 140px;
+            }
+
+            .is--mobile {
+                display: block;
+                flex-grow: 0;
+
+                .navbar__hamburguer {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: fit-content;
+
+                    img {
+                        width: fit-content;
+                    }
+                }
+
+                .navbar__overlay {
+                    background-image: url('../img/bg-services.png'), linear-gradient(#FF8C39, #FF5C5C);
+                    background-position: bottom 0 right 0;
+                    background-repeat: no-repeat;
+                    z-index: 3001;
+                    display: none;
+                    .animation__fade_in_right();
+
+                    &.open {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width: 100%;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        overflow: hidden !important;
+                        transition: all linear 0.5s;
+
+                        .overlay__content {
+                            overflow-y: auto !important;
+                            height: 90%;
+
+                            .overlay__header {
+                                display: flex;
+                                justify-content: flex-end;
+                                margin: 30px 30px 109px 30px;
+
+                                .overlay__close {
+                                    width: fit-content;
+                                }
+                            }
+
+                            .overlay__menu {
+                                margin: 0;
+
+                                .overlay__links {
+                                    gap: 12px;
+                                    margin-bottom: 64px;
+
+                                    a {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        text-align: center;
+                                        color: #f7f7f7;
+                                    }
+                                }
+
+                               
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .is--desktop {
+                display: none;
+            }
+
+
+        }
+
+
+    }
+}
