@@ -125,33 +125,53 @@ menu,
 nav {
   display: block;
 }
-.btn__1 {
+.btn__line {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 42px;
-  border-radius: 4px;
-  background: #B58740;
-  width: 256px;
-  color: #FFF;
+  padding: 16px 35px;
+  width: fit-content;
+  border-radius: 20px 0;
+  border: 1px solid #5BBC48;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
-  line-height: 134%;
   transition: all linear 0.2s;
+  letter-spacing: 3px;
+  flex-shrink: 0;
+  gap: 10px;
 }
-.btn__1:hover {
-  background-color: #FFF;
-  color: #B58740;
+.btn__line .icon {
+  width: 24px;
+}
+.btn__line.green {
+  color: #5BBC48;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn__line.green:hover {
+  color: #F1F1F1;
+  background-color: #5BBC48;
+}
+.btn__line.green:hover .icon {
+  filter: invert(100%) sepia(100%) grayscale(100%) brightness(200%);
+}
+.btn__line.blue {
+  color: #03395D;
+  border-color: #03395D;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn__line.blue:hover {
+  color: #F1F1F1;
+  background-color: #03395D;
 }
 .float__whatsapp {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 85px;
-  height: 85px;
-  background-color: #25D366;
+  width: 75px;
+  height: 75px;
+  background-color: #5BBC48;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +182,7 @@ nav {
   border-radius: 100%;
 }
 .float__whatsapp img {
-  width: 50px;
+  width: 40px;
 }
 .float__whatsapp:hover {
   background-color: white;
@@ -209,8 +229,8 @@ nav {
   width: 100%;
 }
 .page__header .wrapper {
-  max-width: 1225px;
-  padding: 38px 24px;
+  max-width: 1295px;
+  padding: 24px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -218,32 +238,27 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 62px;
 }
 .page__header .wrapper .is--desktop .logo {
-  width: 256px;
-}
-.page__header .wrapper .is--desktop .logo a {
   width: 222px;
 }
-.page__header .wrapper .is--desktop .logo a img {
+.page__header .wrapper .is--desktop .logo img {
   width: 100%;
 }
 .page__header .wrapper .is--desktop .links {
   display: flex;
   align-items: center;
-  gap: 52px;
 }
 .page__header .wrapper .is--desktop .links a {
   font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 400;
   transition: all linear 0.15s;
-  color: #FFF;
+  color: #44702B;
+  padding: 5px 10px;
 }
 .page__header .wrapper .is--desktop .links a:hover {
   cursor: pointer;
-  color: #E9B970;
+  color: #03395D;
 }
 .page__header .wrapper .is--mobile {
   display: none;
@@ -318,56 +333,33 @@ nav {
   }
 }
 .page__hero {
-  background-image: url('../img/banner-hero.png');
+  background-image: url('../img/bg-hero.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 90px;
+  background-position: top 0 right 0;
 }
 .page__hero .wrapper {
-  max-width: 1042px;
-  padding-top: 264px;
-  padding-bottom: 128px;
+  max-width: 1152px;
+  padding-top: 234px;
+  padding-bottom: 169px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .page__hero .wrapper .title {
-  color: #FFF;
+  color: #111;
   font-size: 46px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 127%;
-  width: 414px;
-  margin-right: 74px;
+  max-width: 535px;
+  margin-bottom: 12px;
 }
 .page__hero .wrapper .title span {
-  color: #E9B970;
+  color: #03395D;
 }
-.page__hero .wrapper .description {
-  color: #FFF;
-  font-size: 24px;
-  font-style: normal;
+.page__hero .wrapper .subtitle {
+  color: #111;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 133%;
-  padding-left: 90px;
-  border-left: 1px solid #E9B970;
-  width: 483px;
-}
-.page__hero .wrapper .description span {
-  font-weight: 700;
-}
-.page__hero .btn__down {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.page__hero .btn__down .arrow__down {
-  transition: all linear 0.2s;
-}
-.page__hero .btn__down .arrow__down:hover {
-  cursor: pointer;
-  transform: translateY(5px);
+  max-width: 564px;
+  margin-bottom: 32px;
 }
 body {
   background-color: #F6FBFB;
