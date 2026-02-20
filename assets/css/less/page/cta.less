@@ -1,2 +1,62 @@
 // out: false
 
+.page__cta {
+    background-image: url('../img/bg-cta.png'), linear-gradient(to right, #2D461F, #9CC64A);
+    background-position: bottom 0 right -42px, top 0 left 0;
+    background-repeat: no-repeat;
+    padding: 52px;
+
+    .wrapper {
+        max-width: 1089px;
+        padding: 0 24px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .content {
+           max-width: 581px;
+           width: 100%;
+           flex-shrink: 0;
+           
+           .title {
+              font-size: 40px;
+              color: #FBF6f6;
+              font-weight: 700;
+              line-height: 123%;
+              margin-bottom: 20px;
+           }
+
+           .description {
+               font-size: 20px;
+               color: #FBF6f6;
+               font-weight: 400;
+           }
+        }
+    }
+
+    @media (max-width: 768px) {
+        background-image: url('../img/bg-cta.png'), linear-gradient(to bottom, #2D461F, #9CC64A);
+        background-position: bottom 0 right -42px, top 0 left 0;
+        background-repeat: no-repeat;
+        background-size: 102px, cover;
+        padding: 52px 0;
+
+        .wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+
+            .content {
+                text-align: center;
+                .title {
+                    font-size: 32px;
+                }
+            }
+
+            .btn__line {
+                margin: 0 auto;
+            }
+        }
+    }
+}

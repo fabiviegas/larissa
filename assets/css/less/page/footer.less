@@ -1,3 +1,192 @@
 //out: false
 
+.page__footer {
+    background-image: url('../img/bg-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 35px;
+
+    .wrapper {
+        max-width: 588px;
+        width: 100%;
+        margin: 0 10% 0 auto;
+        padding: 0 24px;
+        margin-bottom: 54px;
+
+        .logo {
+           width: 417px; 
+           margin-bottom: 30px;
+        }
+
+        .links__social {
+            display: flex;
+            width: 126px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            padding-left: 10px;
+
+            .btn__social {
+                background-color: #FFF;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 52px;
+                height: 52px;
+
+                .icon {
+                    width: 22px;
+                    transition: all linear .20s;
+                }
+
+                &:hover {
+                    .icon {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .links__footer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 22px;
+
+            a {
+                font-size: 16px;
+                font-weight: 400;
+                transition: all linear .15s;
+                color: #FFF;
+                padding: 5px 10px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #FFF;
+                    transform: translateY(-4px);
+                }
+            }
+        }
+
+        .links__contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-left: 10px;
+
+            .link {
+                font-size: 18px;
+                color: #FFF;
+                font-weight: 400;
+                transition: all linear .15s;
+
+                 &:hover {
+                    cursor: pointer;
+                    color: #FFF;
+                    transform: translateX(4px);
+                }
+            }
+
+            .location {
+                font-size: 18px;
+                color: #FFF;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .footer__copyrights {
+        max-width: 1224px;
+        padding: 0 24px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .copyright {
+            font-weight: 400;
+            color: #FFF;
+            font-size: 16px;
+            line-height: 134%;
+        }
+
+        .developer {
+            width: 144px;
+
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        background-image: url('../img/bg-footer-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 80px;
+        padding-bottom: 28px;
+
+        .wrapper {
+            margin: 0 auto;
+            margin-bottom: 42px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .logo {
+                width: 250px; 
+                margin-bottom: 30px;
+            }
+
+            .links__social {
+                justify-content: center;
+                width: 100%;
+                max-width: 126px;
+                gap: 16px;
+                padding-left: 0;
+            }
+
+            .links__footer {
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 32px;
+            }
+
+            .links__contact {
+                align-items: center;
+                text-align: center;
+                padding-left: 0;
+
+                .location {
+                    max-width: 288px;
+                }
+            }
+        }
+
+        .footer__copyrights {
+            flex-direction: column;
+            text-align: center;
+            gap: 24px;
+
+            .copyright {
+                font-size: 14px;
+            }
+
+            .developer {
+                width: 120px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 

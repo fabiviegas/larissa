@@ -52,15 +52,20 @@
     @media screen and (max-width: @tablet) {
 
         .wrapper {
-            padding: 24px 28px;
-
-            .logo {
-                width: 140px;
-            }
+            padding: 24px 28px;            
 
             .is--mobile {
-                display: block;
-                flex-grow: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .logo {
+                    width: 180px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
 
                 .navbar__hamburguer {
                     display: flex;
@@ -118,9 +123,37 @@
                                         text-align: center;
                                         color: #f7f7f7;
                                     }
-                                }
+                                }                               
+                            }
 
-                               
+                            .links__social {
+                                display: flex;
+                                width: 126px;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 32px;
+                                padding-left: 10px;
+
+                                .btn__social {
+                                    background-color: #FFF;
+                                    border-radius: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 52px;
+                                    height: 52px;
+
+                                    .icon {
+                                        width: 22px;
+                                        transition: all linear .20s;
+                                    }
+
+                                    &:hover {
+                                        .icon {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

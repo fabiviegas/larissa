@@ -45,6 +45,30 @@
             background-color: #03395D;
         }
     }
+
+    &.white {
+        color: #FFF;
+        border-color: #FFF;
+        background-color: transparent;
+
+        .icon {
+            width: 20px;
+        }
+
+        &:hover {
+            background-color: #F1F1F1;
+            color: #44702B;
+
+            .icon {
+                filter: brightness(0) saturate(100%) invert(36%) sepia(36%) saturate(697%) hue-rotate(54deg) brightness(96%) contrast(91%);
+            }
+        }
+    }
+
+    @media (max-width: @tablet) {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
     
 }
 

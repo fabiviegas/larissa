@@ -44,7 +44,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png"> 
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -94,11 +94,9 @@
 
             <div class="is--mobile">
 
-                <h1 class="logo">
-                    <a href="index.html" rel="noopener noreferrer">
-                        <img src="assets/img/logo-header.png" alt="Logo">
-                    </a>
-                </h1>
+                <a href="index.html" rel="noopener noreferrer" class="logo">
+                    <img src="assets/img/logo-header.png" alt="Logo">
+                </a>
 
                 <menu class="navbar__hamburguer">
                     <img src="assets/img/burger-bar.svg" alt="Menu">
@@ -161,14 +159,14 @@
         <div class="wrapper">
             <div class="numbers__item">
                 <span class="number">+9</span>
-                <span class="number__text">anos de experiência</span>
+                <span class="number__text">Anos de<br>experiência</span>
             </div>
             <div class="numbers__item">
                 <span class="number">+500</span>
-                <span class="number__text">atendimentos</span>
+                <span class="number__text">Atendimentos</span>
             </div>
             <div class="text">
-                <p class="highlight__text">Atendimento em <span>todo o Brasil</span></p>
+                <p class="highlight__text">Atendimento em<br><span>todo o Brasil</span></p>
             </div>
         </div>
     </section>
@@ -185,7 +183,7 @@
         </div>
     </section>
 
-    <section class="sobre" id="sobre">
+    <section class="page__about" id="sobre">
         <div class="wrapper">
             <div class="content">
                 <h2 class="title">Sobre mim</h2>
@@ -213,11 +211,11 @@
         </div>
     </section>    
 
-    <section class="services" id="servicos"> 
+    <section class="page__services" id="servicos"> 
         <div class="wrapper">
             <div class="heading">
                 <h2 class="title">Serviços</h2>
-                <h3 class="subtitle">O que fazemos pelo seu<br><span>trabalho acadêmico</span></h3>
+                <h3 class="subtitle">O que fazemos pelo seu <br><span>trabalho acadêmico</span></h3>
             </div>
 
             <div class="services__list">
@@ -249,71 +247,65 @@
 
             <a href="http://wa.me/5511972017545" class="btn__services" target="_blank" rel="noopener noreferrer">
                 <img src="assets/img/arrow-green.svg" class="arrow" alt="Seta">
-                <div class="btn__content">
+                <P class="btn__content">
                     <img src="assets/img/icon-whats-white.svg" class="icon" alt="Whatsapp">
                     Solicite seu orçamento <span>agora</span>
-                </div>
+                </P>
             </a>
         </div>
     </section>
 
-    <section class="testimonials" id="depoimentos">
+    <section class="page__testimonials" id="depoimentos">
         <div class="wrapper">
-            <div class="heading">                
-                <h2 class="title">Depoimentos</h2>
-                <h3 class="subtitle">O que dizem meus clientes</h3>                
-            </div>
-
+            <h2 class="title">Depoimentos</h2>
+            <h3 class="subtitle">O que dizem<br>meus clientes</h3>             
+        </div>
+        <div class="carousel">
             <div class="owl-carousel owl-theme testimonials__carousel">
-
-                <div class="item">
-                    <div class="card__testimonial mx-auto">                        
-                        <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
-                        <div class="customer">                              
-                            <p class="card__text">O artigo foi aceito na revista. Muito obrigada, Deus abençoe!</p>
-                            <h3 class="name">
-                                Gabriel, <span>Engenheiro Agrônomo</span>
-                            </h3>                               
-                        </div> 
+                    <div class="item">
+                        <div class="card__testimonial mx-auto">
+                            <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
+                            <div class="customer">
+                                <p class="card__text">O artigo foi aceito na revista. Muito obrigada, Deus abençoe!</p>
+                                <h3 class="name">
+                                    Gabriel, <span>Engenheiro Agrônomo</span>
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="item">
-                    <div class="card__testimonial mx-auto">                        
-                        <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
-                        <div class="customer">                              
-                            <p class="card__text">Saiu a nota do outro TCC, nota 10. Muito obrigada novamente!</p>
-                            <h3 class="name">
-                                <span>Contadora</span>, Unespar
-                            </h3>                               
-                        </div> 
+                    <div class="item">
+                        <div class="card__testimonial mx-auto">
+                            <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
+                            <div class="customer">
+                                <p class="card__text">Saiu a nota do outro TCC, nota 10. Muito obrigada novamente!</p>
+                                <h3 class="name">
+                                    <span>Contadora</span>, Unespar
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="item">
-                    <div class="card__testimonial mx-auto">                        
-                        <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
-                        <div class="customer">                              
-                            <p class="card__text">Você corrigiu minha dissertação de mestrado no início do ano. Defendi recentemente e fui aprovada! Gostaria de agradecer pelo trabalho impecável!</p>
-                            <h3 class="name">
-                                Mariana, <span>Mestrado em Educação</span>
-                            </h3>                               
-                        </div> 
+                    <div class="item">
+                        <div class="card__testimonial mx-auto">
+                            <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
+                            <div class="customer">
+                                <p class="card__text">Você corrigiu minha dissertação de mestrado no início do ano. Defendi recentemente e fui aprovada! Gostaria de agradecer pelo trabalho impecável!</p>
+                                <h3 class="name">
+                                    Mariana, <span>Mestrado em Educação</span>
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="item">
-                    <div class="card__testimonial mx-auto">                        
-                        <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
-                        <div class="customer">                              
-                            <p class="card__text">Muito obrigada pelo envio do TCC. Minha orientadora validou e fizemos pequenos ajustes por aqui mesmo em dosagem de medicamento e adição de exames mas ficou incrível!!! Muito obrigada mesmo.</p>
-                            <h3 class="name">
-                                Giovanna, <span>Veterinária</span>
-                            </h3>                               
-                        </div> 
+                    <div class="item">
+                        <div class="card__testimonial mx-auto">
+                            <img src="assets/img/icon-quote.svg" class="quote" alt="Depoimento">
+                            <div class="customer">
+                                <p class="card__text">Muito obrigada pelo envio do TCC. Minha orientadora validou e fizemos pequenos ajustes por aqui mesmo em dosagem de medicamento e adição de exames mas ficou incrível!!! Muito obrigada mesmo.</p>
+                                <h3 class="name">
+                                    Giovanna, <span>Veterinária</span>
+                                </h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -321,16 +313,18 @@
     <section class="page__cta">
         <div class="wrapper">
             <div class="content">
-                <h2 class="title">Agende sua consulta hoje mesmo e tenha orientação jurídica confiável.</h2>
+                <h2 class="title">Entregue seu trabalho com mais segurança</h2>
+                <p class="description">Revisão, formatação e orientação acadêmica conforme as exigências da sua instituição.</p>
             </div>
-            <a href="http://wa.me/5551989743363" class="btn__2" target="_blank" rel="noopener noreferrer">
-                Entre em contato
+            <a href="http://wa.me/5511972017545" class="btn__line white" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/icon-whats-white.svg" class="icon" alt="Whatsapp">
+                Falar no Whatsapp
             </a>
         </div>
     </section>
 
 
-    <footer class="page__footer">
+    <footer class="page__footer" id="contato">
         <div class="footer__content">
             <div class="wrapper">
                 <img src="assets/img/logo-footer.png" class="logo" alt="Logo larissa Zanelatto">
@@ -404,13 +398,22 @@
         $('.testimonials__carousel').owlCarousel({
             loop: false,
             nav: true,
-            dots: false,
+            dots: true,
+            navText: [
+                "<img src='assets/img/arrow-carousel-left.svg' alt='Anterior'>",
+                "<img src='assets/img/arrow-carousel-right.svg' alt='Próximo'>"
+            ],
 
             responsive: {
                 0: {
                     items: 1,
                     margin: 10,
                 },
+
+                1280: {
+                    items: 2,
+                    stagePadding: 120,
+                }
             }
         });
        

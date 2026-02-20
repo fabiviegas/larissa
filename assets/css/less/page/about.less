@@ -1,4 +1,149 @@
 //out: false
 
+.page__about {
+    background-color: #E8F1F2;
+    padding-top: 92px;
+    padding-bottom: 92px;
+    
+    .wrapper {
+        max-width: 1156px;
+        padding: 0 24px;
+        margin: 0 auto;
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+
+        .content {
+            max-width: 592px;
+            width: 100%;
+            flex-shrink: 0;
+
+            .title {
+                color: #2D461F;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 32px;
+            }
+
+            .text {
+                font-size: 12px;
+                line-height: 160%;
+                font-weight: 400;
+                margin-bottom: 32px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .number {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+
+                .years {
+                    font-size: 46px;
+                    font-weight: 700;
+                    color: #2D461F;
+                }
+
+                .description {
+                    letter-spacing: 3px;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #04395E;
+                    line-height: 160%;
+                    max-width: 293px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+
+        .cover__content {
+            position: relative;
+            max-width: 420px;
+            width: 100%;
+            flex-shrink: 0;
+            padding-top: 30px;
+
+            .cover {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+
+            .box {
+                position: absolute;
+                bottom: 24px;
+                left: -50px;
+                max-width: 384px;
+                width: 100%;
+                z-index: 2;
+                border-radius: 20px 0;
+                background-color: #FFF;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                padding: 18px 32px;
+
+                .name {
+                    font-size: 28px;
+                    color: #04395E;
+                    font-weight: 700;
+                    margin-bottom: 12px;
+                }
+
+                .info {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+            gap: 42px;
+
+            .content {
+                text-align: center;
+
+                .title {
+                    font-size: 32px;
+                }
+
+                .text {
+                    font-size: 14px;
+                }
+
+                .number {
+                    flex-direction: column;
+                    gap: 12px;
+
+                    .description {
+                        max-width: none;
+                    }
+                }
+            }
+
+            .cover__content {
+                padding-top: 0;
+
+                .box {
+                    left: -20px;
+                    bottom: -52px;
+                    padding: 18px 24px;
+
+                    .name {
+                        font-size: 22px;
+                    }
+
+                    .info {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
